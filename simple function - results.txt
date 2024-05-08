@@ -1,0 +1,75 @@
+all of these results are for a simple series going from 0 to 99
+
+these are for hidden_size 5, but altering the hidden_size was found to have no significant effect:
+learning rate 0.01 (but learning rate also appeared to have no significant effect):
+sequence length 16, no use of h_prev:
+Epoch 1, Total Loss: 163130.61
+Epoch 2, Total Loss: 162822.67
+Epoch 3, Total Loss: 162607.02
+Epoch 4, Total Loss: 162327.013
+Epoch 5, Total Loss: 162024.52
+Epoch 6, Total Loss: 159876.75
+Epoch 7, Total Loss: 159883.58
+Epoch 8, Total Loss: 159806.38
+Epoch 9, Total Loss: 159718.31
+Epoch 10, Total Loss: 159647.46
+
+sequence length 16, use of simplified derive for h_prev (notice that inclusion of h_prev made a real improvement) (all below data items are also using h_prev):
+Epoch 1, Total Loss: 151518.24
+Epoch 2, Total Loss: 149219.98
+Epoch 3, Total Loss: 149328.07
+Epoch 4, Total Loss: 147115.29
+Epoch 5, Total Loss: 147038.55
+Epoch 6, Total Loss: 147029.96
+Epoch 7, Total Loss: 147026.97
+Epoch 8, Total Loss: 147025.50
+Epoch 9, Total Loss: 147024.63
+Epoch 10, Total Loss: 147024.07
+
+sequence length 32
+Epoch 1, Total Loss: 151401.97
+Epoch 2, Total Loss: 150557.80
+Epoch 3, Total Loss: 150432.98
+Epoch 4, Total Loss: 150416.56
+Epoch 5, Total Loss: 148734.58
+Epoch 6, Total Loss: 148425.34
+Epoch 7, Total Loss: 147578.45
+Epoch 8, Total Loss: 147023.99
+Epoch 9, Total Loss: 147023.54
+Epoch 10, Total Loss: 147023.42
+
+sequence length 64
+Epoch 1, Total Loss: 43904.52
+Epoch 2, Total Loss: 43844.30
+Epoch 3, Total Loss: 43458.46
+Epoch 4, Total Loss: 43458.36
+Epoch 5, Total Loss: 43458.30
+Epoch 6, Total Loss: 43458.25
+Epoch 7, Total Loss: 43458.21
+Epoch 8, Total Loss: 43458.17
+Epoch 9, Total Loss: 43458.14
+Epoch 10, Total Loss: 43458.12
+
+sequence length of 128
+Epoch 1, Total Loss: 0
+Epoch 2, Total Loss: 0
+Epoch 3, Total Loss: 0
+Epoch 4, Total Loss: 0
+Epoch 5, Total Loss: 0
+Epoch 6, Total Loss: 0
+Epoch 7, Total Loss: 0
+Epoch 8, Total Loss: 0
+Epoch 9, Total Loss: 0
+Epoch 10, Total Loss: 0
+
+sequence length of 256
+Epoch 1, Total Loss: 0
+Epoch 2, Total Loss: 0
+Epoch 3, Total Loss: 0
+Epoch 4, Total Loss: 0
+Epoch 5, Total Loss: 0
+Epoch 6, Total Loss: 0
+Epoch 7, Total Loss: 0
+Epoch 8, Total Loss: 0
+Epoch 9, Total Loss: 0
+Epoch 10, Total Loss: 0
